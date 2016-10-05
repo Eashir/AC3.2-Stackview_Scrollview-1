@@ -1,28 +1,162 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="FjR-a3-K2R">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--View Controller-->
+        <scene sceneID="jbv-cl-DEq">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Stackview_Scrollview_1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="FjR-a3-K2R" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="v1D-Y7-wG6"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZUI-J9-F5y"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="drS-6G-CS0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="grF-kE-dF7">
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1yW-pV-Ruf">
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pokemane" translatesAutoresizingMaskIntoConstraints="NO" id="GZF-Dr-Zgk"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Starter Pokemane" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H8Y-rO-99s">
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" red="1" green="0.35593244773672583" blue="0.51671178799855144" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ShJ-eF-BLo">
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="55A-y6-nI0">
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pikachu" translatesAutoresizingMaskIntoConstraints="NO" id="uRX-Rl-3kk">
+                                                                <color key="backgroundColor" red="0.97806395603774721" green="1" blue="0.35455334865985566" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </imageView>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Charmander" translatesAutoresizingMaskIntoConstraints="NO" id="CdG-8K-D5z">
+                                                                <color key="backgroundColor" red="1" green="0.53170117578433806" blue="0.15354014220019241" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </imageView>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Squirtle" translatesAutoresizingMaskIntoConstraints="NO" id="wf6-bF-hlu">
+                                                                <color key="backgroundColor" red="0.62499393581683549" green="1" blue="0.95540325288849604" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </imageView>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bulbasaur" translatesAutoresizingMaskIntoConstraints="NO" id="gZU-lE-BvN"/>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="55A-y6-nI0" firstAttribute="centerY" secondItem="ShJ-eF-BLo" secondAttribute="centerY" id="2PK-yK-lXl"/>
+                                                    <constraint firstItem="55A-y6-nI0" firstAttribute="top" secondItem="ShJ-eF-BLo" secondAttribute="top" constant="20" id="Lft-62-9Kj"/>
+                                                    <constraint firstAttribute="height" constant="200" id="M7L-m8-KGc"/>
+                                                    <constraint firstItem="55A-y6-nI0" firstAttribute="leading" secondItem="ShJ-eF-BLo" secondAttribute="leading" id="T8b-5O-w1y"/>
+                                                    <constraint firstAttribute="bottom" secondItem="55A-y6-nI0" secondAttribute="bottom" constant="20" id="sOB-va-5Md"/>
+                                                    <constraint firstAttribute="trailing" secondItem="55A-y6-nI0" secondAttribute="trailing" id="x6P-eh-XYv"/>
+                                                </constraints>
+                                            </scrollView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Common Pokemane" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uZy-41-mMx">
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" red="0.1381135340468802" green="1" blue="0.74568856772165892" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tb4-7V-NWU">
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="imM-ud-aAK">
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pidgey" translatesAutoresizingMaskIntoConstraints="NO" id="sUg-Mx-G62">
+                                                                <color key="backgroundColor" red="1" green="0.82145317453939604" blue="0.21853286159920637" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </imageView>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rattata" translatesAutoresizingMaskIntoConstraints="NO" id="nPM-Aq-ydR">
+                                                                <color key="backgroundColor" red="0.76986651606111556" green="0.60608007811709785" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </imageView>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Weedle" translatesAutoresizingMaskIntoConstraints="NO" id="Hlr-9b-v8B">
+                                                                <color key="backgroundColor" red="1" green="0.84799223383180689" blue="0.56597578456160447" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </imageView>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Zubat" translatesAutoresizingMaskIntoConstraints="NO" id="je1-MJ-4nb"/>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Caterpie" translatesAutoresizingMaskIntoConstraints="NO" id="P5o-Eg-UTm"/>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="imM-ud-aAK" firstAttribute="centerY" secondItem="tb4-7V-NWU" secondAttribute="centerY" id="84H-Fu-Xp4"/>
+                                                    <constraint firstItem="imM-ud-aAK" firstAttribute="leading" secondItem="tb4-7V-NWU" secondAttribute="leading" id="9YE-S7-oRl"/>
+                                                    <constraint firstAttribute="bottom" secondItem="imM-ud-aAK" secondAttribute="bottom" constant="20" id="JmG-we-WiH"/>
+                                                    <constraint firstItem="imM-ud-aAK" firstAttribute="top" secondItem="tb4-7V-NWU" secondAttribute="top" constant="20" id="aW7-qQ-r6w"/>
+                                                    <constraint firstAttribute="trailing" secondItem="imM-ud-aAK" secondAttribute="trailing" id="c2D-dh-NMc"/>
+                                                </constraints>
+                                            </scrollView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Uncommon Pokemane" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k42-pE-eIA">
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" red="0.66469213054568055" green="0.34887833125736734" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zek-zR-PWd">
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="TMd-Ld-VCw">
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dratini" translatesAutoresizingMaskIntoConstraints="NO" id="pCX-9U-vb3">
+                                                                <color key="backgroundColor" red="0.58104251558793307" green="0.86211718612458599" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </imageView>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Clefairy" translatesAutoresizingMaskIntoConstraints="NO" id="pLJ-qk-1Sh">
+                                                                <color key="backgroundColor" red="1" green="0.77260322614057986" blue="0.94105200220311691" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </imageView>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Abra" translatesAutoresizingMaskIntoConstraints="NO" id="0UT-16-4FV">
+                                                                <color key="backgroundColor" red="1" green="0.78898728677127827" blue="0.44270232800697229" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </imageView>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Psyduck" translatesAutoresizingMaskIntoConstraints="NO" id="R8a-9s-evA"/>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Eevee" translatesAutoresizingMaskIntoConstraints="NO" id="zdo-1T-ZnS"/>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="TMd-Ld-VCw" firstAttribute="centerY" secondItem="Zek-zR-PWd" secondAttribute="centerY" id="7eP-DB-2h4"/>
+                                                    <constraint firstItem="TMd-Ld-VCw" firstAttribute="leading" secondItem="Zek-zR-PWd" secondAttribute="leading" id="F6f-hs-BQu"/>
+                                                    <constraint firstAttribute="bottom" secondItem="TMd-Ld-VCw" secondAttribute="bottom" constant="20" id="VOr-N0-uNo"/>
+                                                    <constraint firstItem="TMd-Ld-VCw" firstAttribute="top" secondItem="Zek-zR-PWd" secondAttribute="top" constant="20" id="fQ3-rH-B5q"/>
+                                                    <constraint firstAttribute="trailing" secondItem="TMd-Ld-VCw" secondAttribute="trailing" constant="20" id="psD-VY-aed"/>
+                                                </constraints>
+                                            </scrollView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="1yW-pV-Ruf" secondAttribute="trailing" id="1KZ-jX-36C"/>
+                                    <constraint firstAttribute="bottom" secondItem="1yW-pV-Ruf" secondAttribute="bottom" id="Zrm-wQ-5Hd"/>
+                                    <constraint firstItem="1yW-pV-Ruf" firstAttribute="leading" secondItem="grF-kE-dF7" secondAttribute="leading" id="isO-xU-ilg"/>
+                                    <constraint firstItem="1yW-pV-Ruf" firstAttribute="top" secondItem="grF-kE-dF7" secondAttribute="top" id="sEE-qC-3C5"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="grF-kE-dF7" secondAttribute="bottom" id="Ycb-C7-lep"/>
+                            <constraint firstAttribute="trailing" secondItem="grF-kE-dF7" secondAttribute="trailing" id="gff-8g-uIh"/>
+                            <constraint firstItem="grF-kE-dF7" firstAttribute="top" secondItem="drS-6G-CS0" secondAttribute="top" id="pBa-os-eTp"/>
+                            <constraint firstItem="1yW-pV-Ruf" firstAttribute="width" secondItem="drS-6G-CS0" secondAttribute="width" id="pyz-dd-hc9"/>
+                            <constraint firstItem="grF-kE-dF7" firstAttribute="leading" secondItem="drS-6G-CS0" secondAttribute="leading" id="ySE-ta-el1"/>
+                        </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e2f-XQ-l9h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="964" y="-233"/>
+            <point key="canvasLocation" x="1884" y="-251.42428785607197"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Abra" width="129" height="115"/>
+        <image name="Bulbasaur" width="129" height="128"/>
+        <image name="Caterpie" width="129" height="112"/>
+        <image name="Charmander" width="113" height="129"/>
+        <image name="Clefairy" width="131" height="99"/>
+        <image name="Dratini" width="129" height="128"/>
+        <image name="Eevee" width="107" height="129"/>
+        <image name="Pidgey" width="129" height="109"/>
+        <image name="Pikachu" width="129" height="120"/>
+        <image name="Pokemane" width="200" height="200"/>
+        <image name="Psyduck" width="103" height="127"/>
+        <image name="Rattata" width="129" height="115"/>
+        <image name="Squirtle" width="103" height="129"/>
+        <image name="Weedle" width="103" height="129"/>
+        <image name="Zubat" width="129" height="111"/>
+    </resources>
 </document>
